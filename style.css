@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+
+:root{
+	--pink: hsl(338, 93%, 48%);
+	--light-blue:  hsl(213, 91%, 53%);
+	--dark-blue: hsl( 213, 91%, 22%);
+	--very-dark-blue:  hsl(214, 90%, 11%);
+
+}
+
+
+body{
+	background-color: var(--very-dark-blue);
+	font-family: 'Inter', sans-serif;
+	color: white;
+}
+
+.header-container{
+	text-align: center;
+	height: 10vh;
+	padding-top: 5px;
+	border: 1px solid white;
+}
+
+.header-container__title{
+	font-size: 32px;
+}
+
+.main-container{
+	height: 75vh;
+
+}
+
+.game-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 60%;
+	height: 80%;
+	margin:7.5vh auto;
+	background-color: var(--dark-blue);
+	border: 1px solid var(--light-blue);
+
+}
+
+.game-container__header {
+	padding: 10px;
+}
+
+/*
+.board{
+	background-color: var(--dark-blue);
+}
+*/
+
+.game-container__box-instruction {
+	text-align: center;
+}
+
+.gameContainer__box-instructions--instructions {
+	font-size: 24px;
+}
+.game-container__action-bttns{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px;
+}
+.action-bttns{
+	display: inline-block;
+	width: 160px;
+	text-decoration: none;
+	border: 1px solid #ffff;
+	color: #ffff;
+	background-color: var(--pink);
+	padding: 5px;
+	border-radius: 15px;
+	text-align: center;
+}
+
+.footer-container{
+	height: 7.5vh;
+	border-top: 1px solid #ffff;
+	text-align: center;
+
+}
+
+.footer-container p{
+	font-size: 12px;
+}
+.footer-container__linkedin-link{
+	text-decoration: none;
+	color: var(--pink);
+}
