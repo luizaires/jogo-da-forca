@@ -8,21 +8,24 @@
 </head>
 <body>
 	<header class="header-container">
-		<h1 class="header-container__title">Jogo da Forca</h1>
+		<div class="header-container__container1">
+			<img class="header-container__container1--logo-alura" src="alura-logo.svg" alt="logo">
+		</div>
+		<div class="header-container__container2">
+			<h1 class="header-container__container2--title">Jogo da Forca</h1>
+		</div>
 	</header>
 	<main class="main-container">
 		<section class="game-container">
-			<div class="game-container__header">
-				<img class="gameContainer__board-header--logo" src="alura-logo.svg" alt="logo">
-			</div>
 			<!--
 			<div class="game-container__board">
 				<canvas class="board" width="" height="300px" ></canvas>
 			</div>
 			--->
-			<div class="game-container__box-instruction">
-				<h2 class="gameContainer__box-instructions--instructions">
-					Vamos jogar!
+			<div class="game-container__game-box">
+				<h2 class="game-container__game-box--instructions">
+					<span> Vamos </span> 
+					jogar!
 				</h2>
 			</div>
 			<div class="game-container__action-bttns">
@@ -32,12 +35,14 @@
 		</section>
 	</main>
 	<footer class="footer-container">
-		<p>
-			Challenge by <a class="footer-container__linkedin-link" href="https://www.linkedin.com/school/aluracursos/">Alura</a>
-		</p>
-		<p>	
-			Coded by <a class="footer-container__linkedin-link" href="https://www.linkedin.com/in/luiz-aires-dataanalyst/">Luiz Aires</a>
-		</p>
+		<div class="footer-container__attribution">
+			<p class="footer-container__attribution--challenger">
+				Challenge by <a class="linkedin-link" href="https://www.linkedin.com/school/aluracursos/">Alura</a>
+			</p>
+			<p class="footer-container__attribution--challenger">	
+				Coded by <a class="linkedin-link" href="https://www.linkedin.com/in/luiz-aires-dataanalyst/">Luiz Aires</a>
+			</p>
+		</div>
 	</footer>
 </body>
 </html>

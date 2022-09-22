@@ -12,47 +12,58 @@
 	--light-blue:  hsl(213, 91%, 53%);
 	--dark-blue: hsl( 213, 91%, 22%);
 	--very-dark-blue:  hsl(214, 90%, 11%);
+	--dark: hsl(214, 98%, 8%);
 
 }
 
 
 body{
+	height: 100vh;
 	background-color: var(--very-dark-blue);
 	font-family: 'Inter', sans-serif;
 	color: white;
 }
 
 .header-container{
-	text-align: center;
-	height: 10vh;
-	padding-top: 5px;
-	border: 1px solid white;
+	background-color: var(--dark);
+	position: relative;
+	height: 10%;
+	display: flex;
+	justify-content: start;
+	align-items: center;
 }
+.header-container__container1{
+	margin-left: 15px;
+}
+.header-container__container2{
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
 
-.header-container__title{
+
+}
+.header-container__container2--title{
 	font-size: 32px;
 }
 
 .main-container{
-	height: 75vh;
-
+	height: 70%;
+	margin: 2.5% 0;
 }
 
 .game-container{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 60%;
-	height: 80%;
-	margin:7.5vh auto;
+	width: 70%;
+	height: 100%;
+	margin: 0 auto;
 	background-color: var(--dark-blue);
 	border: 1px solid var(--light-blue);
 
 }
 
-.game-container__header {
-	padding: 10px;
-}
 
 /*
 .board{
@@ -60,42 +71,61 @@ body{
 }
 */
 
-.game-container__box-instruction {
+.game-container__game-box {
+	display: flex;
+	flex-direction: column;
+	height: 88%;
 	text-align: center;
+	justify-content: center;
 }
 
-.gameContainer__box-instructions--instructions {
+.game-container__game-box--instructions {
 	font-size: 24px;
 }
+
+.game-container__game-box--instructions span{
+	color: var(--pink);
+}
 .game-container__action-bttns{
+	height: 12%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	padding: 10px;
 }
 .action-bttns{
 	display: inline-block;
-	width: 160px;
+	width: 200px;
 	text-decoration: none;
+	font-size: 18px;
 	border: 1px solid #ffff;
 	color: #ffff;
 	background-color: var(--pink);
-	padding: 5px;
+	padding: 8px;
 	border-radius: 15px;
 	text-align: center;
 }
 
 .footer-container{
-	height: 7.5vh;
+	background-color: var(--dark);
+	height: 10%;
+}
+
+.footer-container__attribution{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
 	border-top: 1px solid #ffff;
-	text-align: center;
-
 }
 
-.footer-container p{
+.footer-container__attribution--challenger{
 	font-size: 12px;
+	text-align: center;
 }
-.footer-container__linkedin-link{
+
+.linkedin-link{
 	text-decoration: none;
 	color: var(--pink);
 }
